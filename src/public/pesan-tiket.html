@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title> Pemesanan Tiket Online </title>
+    <!-- Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- Linnk Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <!-- css code file -->
+    <link rel="stylesheet" href="../style/global.css" />
+</head>
+
+<body id="pesan-tiket">
+    <!-- Navigation Bar Tag Start -->
+    <nav class="navbar navbar-dark navbar-expand-md bg-transparent fixed-top mynavbar">
+        <div class="container">
+            <img src="../assets/icon/logo-buseet.png" width="70px" alt="Logo Buseet" />
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <!-- Offcanvas Navbar Start -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <img src="../assets/icon/logo-buseet.png" width="50px" alt="Logo Buseet" />
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto justify-content-end flex-grow-1 pe-3">
+                        <!-- Profile Offcanvas Start -->
+                        <li class="nav-item dropdown ms-4 offcanvas-profile">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../assets/icon/profile.svg" width="35px" alt="" />
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Perjalan Saya</a></li>
+                                <li><a class="dropdown-item" href="profil-saya.html">Profile Saya</a></li>
+                                <li><a class="dropdown-item" href="#">Dompet/Kartu</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item text-danger" href="login.html">Sign Out</a></li>
+                            </ul>
+                        </li>
+                        <!-- Profile Offcanvas End -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link aktiv" href="#">Tiket Bus Online</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="partner-kami.html">Partner Kami</a>
+                        </li>
+                        <!-- Dropdown Menu Start -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Atur Pesanan </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Batalkan Tiket</a></li>
+                                <li><a class="dropdown-item" href="#">Perubahan Jadwal</a></li>
+                                <li><a class="dropdown-item" href="#">Tiket Saya</a></li>
+                            </ul>
+                        </li>
+                        <!-- Dropdown Menu End -->
+                        <!-- Profile Picture Start -->
+                        <li class="nav-item dropdown ms-4 profile">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../assets/icon/profile.svg" width="35px" alt="" />
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Perjalan Saya</a></li>
+                                <li><a class="dropdown-item" href="profil-saya.html">Profile Saya</a></li>
+                                <li><a class="dropdown-item" href="#">Dompet/Kartu</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item text-danger" href="login.html">Sign Out</a></li>
+                            </ul>
+                        </li>
+                        <!-- Profile Picture End -->
+                    </ul>
+                </div>
+            </div>
+            <!-- Offcanvas Navbar End -->
+        </div>
+    </nav>
+    <!-- Navigation Bar Tag End -->
+
+    <!-- Image Header -->
+    <img src="../assets/images/bg-bus.jpg" alt="Background Bus" class="bus-img" />
+
+    <!-- Searching Bus Section Start -->
+    <section class="container w-full text-center" id="hero">
+        <form>
+            <div class="d-flex">
+                <!-- Input Asal Bus -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text curved" id="basic-addon1"><i class="bi bi-map"></i></span>
+                    <input type="text" class="form-control" placeholder="Asal" aria-label="Asal" aria-describedby="basic-addon1" />
+                </div>
+
+                <!-- Input Tujuan Bus -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-geo-alt"></i></span>
+                    <input type="text" class="form-control" placeholder="Tujuan" aria-label="Tujuan" aria-describedby="basic-addon1" />
+                </div>
+
+                <!-- Input Tanggal Berangkat -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-calendar-event"></i></span>
+                    <input type="date" class="form-control" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Tanggal Berangkat" aria-label="Tanggal Berangkat" aria-describedby="basic-addon1" />
+                </div>
+
+                <!-- Input Tanggal Kembali -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-calendar-event"></i></span>
+                    <input type="date" class="form-control curved" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Tanggal Kembali" aria-label="Tanggal Kembali" aria-describedby="basic-addon1" />
+                </div>
+            </div>
+
+            <!-- Search Button -->
+            <a href="detail-jadwal.html" class="btn btn-outline-primary btn-light btn-lg">Cari Bus</a>
+        </form>
+    </section>
+    <!-- Searching Bus Section End -->
+
+    <!-- Table Bus Route Section Start -->
+    <section class="list-jadwal text-center">
+        <h3>Rute Jadwal Bus</h3>
+        <div class="d-flex justify-content-center mt-4">
+            <table class="bg-white text-black">
+                <!-- Table Head Start -->
+                <thead class="text-white">
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Bus</th>
+                        <th>Rute</th>
+                        <th>Keberangkatan</th>
+                        <th>Estimasi Waktu</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <!-- Table Head End -->
+
+                <!-- Table Body Start -->
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Sekar Tanjung</td>
+                        <td>Surabaya - Malang</td>
+                        <td>15.00 WIB</td>
+                        <td>1h 30Mins</td>
+                        <td>Rp. 25.000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jaya Makmur</td>
+                        <td>Jakarta - Bandung</td>
+                        <td>12.30 WIB</td>
+                        <td>3h</td>
+                        <td>Rp. 70.000</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Trans Patas</td>
+                        <td>Malang - Jogja</td>
+                        <td>06.00 WIB</td>
+                        <td>6h 30Mins</td>
+                        <td>Rp. 125.000</td>
+                    </tr>
+                </tbody>
+                <!-- Table Body End -->
+            </table>
+        </div>
+        <p class="mt-3 fw-semibold">See More...</p>
+    </section>
+    <!-- Table Bus Route Section End -->
+
+    <footer>
+        <div class="row d-flex align-items-center text-black">
+            <div class="col-1">
+                <img src="../assets/icon/logo-buseet.png" width="100px" alt="Logo Buseet" />
+            </div>
+            <div class="col-5">
+                <p>Buseet adalah jasa pemesanan tiket bis secara online terbesar di dunia. Telah dipercaya lebih dari 36 juta pelanggan secara global. Buseet menawarkan pemesanan tiket bis melalui website, untuk rute-rute utama di Wilayah Indonesia Raya.</p>
+            </div>
+            <div class="col-2 align-self-start">
+                <ul>
+                    <li class="h6">Tentang Kami</li>
+                    <li>Privacy Policy</li>
+                    <li>Info Terkini</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="col-2 align-self-start">
+                <ul>
+                    <li class="h6">Kontak Kami</li>
+                    <li>Email: Buseet@trans.com</li>
+                    <li>IG: Buseet_</li>
+                    <li>Twiter: BuseetAsix</li>
+                </ul>
+            </div>
+            <div class="col-2 align-self-start">
+                <ul>
+                    <li class="h6">Privacy</li>
+                    <li>Keamanan</li>
+                    <li>Ketentuan Cookie</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- javascript code file -->
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

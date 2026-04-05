@@ -1,0 +1,316 @@
+body {
+    background: url("../assets/images/bg-peta-ind.svg") center center, linear-gradient(to bottom, rgba(32, 59, 102, 1), rgba(171, 192, 222, 1));
+    background-size: cover;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.mynavbar {
+    background-color: rgba(32, 63, 102, 0.8) !important;
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20rem;
+}
+
+.mynavbar .offcanvas-profile {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.mynavbar .offcanvas {
+    text-align: center;
+    height: 100vh;
+    color: black;
+}
+
+.mynavbar .nav-link {
+    color: white;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.mynavbar .nav-link:hover {
+    font-weight: 400;
+}
+
+.mynavbar .nav-link:active {
+    color: white;
+}
+
+.mynavbar .aktiv {
+    font-weight: 500;
+}
+
+.bus-img {
+    width: 100vw;
+    height: 65vh;
+    object-fit: cover;
+}
+
+#hero {
+    padding-top: 8rem !important;
+}
+
+#hero .btn {
+    width: 315px;
+    height: 58px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+#hero p {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+#hero .paragraf {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+/* CSS Home page */
+
+.pemesanan .pesan-img,
+.pemesanan .pesan-caption {
+    width: 70%;
+}
+
+.pemesanan,
+.list-jadwal {
+    margin-top: 10rem;
+}
+
+.pemesanan .pesan-img,
+.partner .partner-img {
+    background-color: rgba(217, 217, 217, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.pemesanan .pesan-caption {
+    text-align: left;
+    font-size: 18px;
+}
+
+.pemesanan .pesan-caption p {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.container-btn {
+    padding-top: 5rem;
+}
+
+.container-btn .btn {
+    width: 328px;
+    height: 58px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+
+/* End Home Page CSS */
+
+
+/* CSS Pemesanan Bus */
+
+.container .input-group input,
+.container .input-group span {
+    border-radius: 0;
+    height: 100px;
+}
+
+.container .input-group {
+    margin-top: -11rem;
+}
+
+.container .input-group .curved {
+    border-radius: 15px;
+}
+
+#pesan-tiket form a {
+    padding-top: 0.7rem;
+}
+
+.list-jadwal table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+.list-jadwal table,
+.list-jadwal tr,
+.list-jadwal td,
+.list-jadwal th {
+    border: 3px solid #0c206a;
+    padding: 1rem;
+}
+
+.list-jadwal thead {
+    background-color: #3a4d93;
+}
+
+
+/* CSS Pemesanan End */
+
+
+/* CSS Partner Kami Start */
+
+.partner .partner-img {
+    width: 80%;
+}
+
+.partner .partner-img .row-img {
+    margin-left: 3rem;
+}
+
+
+/* Style Detail Jadwal */
+
+#detail-jadwal aside {
+    background-color: white;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    color: #000;
+}
+
+#detail-jadwal aside h6 {
+    margin-top: 2rem;
+    font-weight: 500;
+}
+
+#detail-jadwal aside .form-check {
+    font-size: 0.85rem;
+}
+
+#detail-jadwal main {
+    margin-bottom: 220px;
+}
+
+#detail-jadwal main h5 {
+    padding-top: 1.7rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+#detail-jadwal main p {
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+#detail-jadwal main .container-tiket {
+    margin-top: 4rem;
+}
+
+#detail-jadwal main .card {
+    position: relative;
+}
+
+#detail-jadwal main .container-tiket .btn {
+    background-color: #203f66;
+    height: 35px;
+    color: #fff !important;
+}
+
+#detail-jadwal main .logo-bus {
+    height: 4rem;
+    background-color: #d9d9d9;
+    line-height: 4rem;
+    border-radius: 8px;
+}
+
+#detail-jadwal main .collapse-shadow {
+    box-shadow: 0px 8px 6px -4px rgba(0, 0, 0, 0.2);
+    margin-left: -1.699999rem;
+    margin-right: -1.599999rem;
+}
+
+
+/*profile*/
+
+.floating-element {
+    top: 0;
+    left: 0;
+    width: 15%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.floating-element p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #203F66;
+}
+
+.floating-element ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.floating-element li {
+    margin-bottom: 3px;
+    padding: 0;
+    color: #9B9B9B;
+}
+
+.floating-element a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.floating-element a:hover {
+    text-decoration: underline;
+}
+
+
+/*end profile*/
+
+footer {
+    height: 203px;
+    width: 100vw;
+    margin-top: 220px;
+    background-color: rgb(188, 194, 217);
+    padding-top: 3rem;
+    box-shadow: 0 -6px 7px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    padding-top: 3rem;
+}
+
+footer ul li {
+    list-style: none;
+    margin-top: 6px;
+}
+
+footer .col-5 {
+    font-size: 13px;
+}
+
+footer ul li:not(:first-child) {
+    font-style: italic;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+    .mynavbar .nav-link {
+        color: #000;
+    }
+    .mynavbar .profile {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .mynavbar .offcanvas-profile {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
