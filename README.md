@@ -1,4 +1,6 @@
-<img src=".github/media/cover.png" alt="Buseet — bus ticket interface" width="1280">
+<img src=".github/media/cover.png" alt="Buseet homepage rendered from the repository frontend" width="1280">
+
+<sub>Frontend preview rendered from this repository.</sub>
 
 # Buseet
 
