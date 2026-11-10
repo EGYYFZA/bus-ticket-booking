@@ -1,30 +1,41 @@
-# Buseet — Bus Ticket Booking
+<img src=".github/media/cover.png" alt="Buseet — bus ticket interface" width="1280">
 
-A static website prototype for exploring bus schedules and the ticket booking journey.
+# Buseet
 
-## Features
+A static prototype of a bus-ticket booking journey, from schedule selection to passenger and payment screens.
 
-- Schedule and ticket selection screens
-- Passenger identity and payment method layouts
-- Sign-in, registration, and profile screens
+**HTML · CSS · JavaScript** · Static interface prototype
 
-## Stack
+## Screens
 
-HTML, CSS, and JavaScript.
+- Schedule and ticket selection.
+- Passenger details and payment-method layouts.
+- Sign-in, registration and profile screens.
 
-## Run locally
+## Open locally
 
-Open `index.html` in a browser. No package installation is required.
+Clone the repository and open [index.html](index.html) in your browser. There is
+no package installation or build step.
 
-## Project status
+For a local HTTP server, run this from the repository root:
 
-This is an interface prototype. Authentication, payment processing, and booking persistence are not production services. Use fictional passenger data when demonstrating it.
+```sh
+python -m http.server 8080 --bind 127.0.0.1
+```
 
-## Structure
+Then open **http://127.0.0.1:8080**.
 
-- `src/public/`: screens for the booking journey
-- `src/js/`: interface interactions
-- `src/style/`: styles
-- `src/assets/`: images and icons
+## Source map
 
-See [SECURITY.md](SECURITY.md) for reporting guidance.
+| Path | Purpose |
+| :-- | :-- |
+| [src/public/](src/public/) | Booking-flow screens |
+| [src/js/](src/js/) | Browser interactions |
+| [src/style/](src/style/) | Styles |
+| [src/assets/](src/assets/) | Existing icons and media |
+
+## Prototype boundary
+
+Authentication, payment processing and booking persistence are not production
+services. Use fictional passenger details. Existing third-party logos and media
+retain their respective ownership. See [SECURITY.md](SECURITY.md).
